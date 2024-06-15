@@ -70,20 +70,40 @@
 
 //  ե) 7-ից մեծ վերջին տարրը և դրան նախորդող զույգ տարրերի արտադրյալը,  
 
-let arr = [2, 3, 6, 7, 8, 2, 4]
-let sum = 1;
-let index = arr.length-1;
-for(let i = arr.length-1; i >= 0; i--){
-   if(arr[i] > 7){
-    index = i;
-     console.log(arr[i]);
-    break;
+// let arr = [2, 3, 6, 7, 8, 2, 4]
+// let sum = 1;
+// let index = arr.length-1;
+// for(let i = arr.length-1; i >= 0; i--){
+//    if(arr[i] > 7){
+//     index = i;
+//      console.log(arr[i]);
+//     break;
 
-   }
-}
-for(let i = 0; i < index; i++){
-    if(arr[i] % 2 == 0){
-        sum = sum * arr[i]
+//    }
+// }
+// for(let i = 0; i < index; i++){
+//     if(arr[i] % 2 == 0){
+//         sum = sum * arr[i]
+//     }
+// }
+// console.log(sum)
+
+// զ) մինչև առաջին բացասական տարրը եղած այն տարրերի քանակը, որոնք պատկանում են [0,20] միջակայքին,
+
+let arr = [3, 60, 4, -2, 7, -1]
+let count = 0;
+let index = 0;
+for(let i = 0; i < arr.length; i++){
+    if(arr[i] < 0){
+        index = i;
+        console.log(arr[i]);
+        break;
     }
 }
-console.log(sum)
+for(let i = 0; i < index; i++){
+    if(arr[i] > 0 && arr[i] < 20){
+        count++
+    }
+}
+console.log(count)
+
