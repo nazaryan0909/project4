@@ -101,7 +101,7 @@ for(let i = 0; i < arr.length; i++){
     }
 }
 for(let i = 0; i < index; i++){
-    if(arr[i] > 0 && arr[i] < 20){
+    if(arr[i] >= 0 && arr[i] <= 20){
         count++
     }
 }
