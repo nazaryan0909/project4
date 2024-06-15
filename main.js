@@ -33,22 +33,38 @@
 
 // գ) վերջին երկնիշ տարրը և դրան հաջորդող կենտ տարրերի քանակը,  
 
-let arr = [2, -12, 6, -73, 7, 3, 9, 4]
-let count = 0;
-let index = arr.length-1;
-for(let i = arr.length-1; i >= 0; i--){
-    if((arr[i] > 9 && arr[i] <= 99) || (arr[i] > -99 && arr[i] < -10 )){
+// let arr = [2, -12, 6, -73, 7, 3, 9, 4]
+// let count = 0;
+// let index = arr.length-1;
+// for(let i = arr.length-1; i >= 0; i--){
+//     if((arr[i] > 9 && arr[i] <= 99) || (arr[i] > -99 && arr[i] < -10 )){
+//         index = i;
+//         console.log(arr[i]);
+//         break;
+//     }
+// }
+// console.log(index)
+// for(let i = index+1; i < arr.length; i++){
+//     if(arr[i] % 2 !== 0){
+//         count++
+//     }
+// }
+// console.log(count)
+
+// դ) առաջին զույգ տարրը և դրան նախորդող տարրերի գումարը, 
+
+let arr = [3, 7, 1, 8, 2]
+let sum = 0;
+let index = 0;
+for(let i = 0; i < arr.length; i++){
+    if(arr[i] % 2 == 0){
         index = i;
         console.log(arr[i]);
         break;
     }
 }
-console.log(index)
-for(let i = index+1; i < arr.length; i++){
-    if(arr[i] % 2 !== 0){
-        count++
-    }
+for(let i = 0; i < index; i++){
+    sum = sum + arr[i]
 }
-console.log(count)
-
+console.log(sum)
 
