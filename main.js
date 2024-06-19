@@ -112,19 +112,22 @@
 // է) [5,24] միջակայքում գտնվող առաջին տարրը և դրան հաջորդող տարրերի միջին թվաբանականը, 
 //  ը) առաջին 0-ին հաջորդող 1-ով սկսվող թվերի գումարը (եթե հաջորդականությունը 0 չի պարունակում՝ արտածել -1):
 
-
-// let arajin = 5;
-
-// let skizb = 5;
-// let verj = 24
-// let qanak = verj - skizb + 1;
-
-// let sum = 0;
-// for (let i = start; i <= end; i++) {
-//     sum += i;
-// }
-
-// let Mijin = sum / qanak;
-// console.log(Mijin);
-// console.log(arajin);
-
+let arr = [3, 7, 5, 8, 1, 13, 23]
+let index = 0;
+let sum = 0;
+let count = 0;
+for(let i = 0; i < arr.length; i++){
+if(arr[i] >= 5 && arr[i] <= 24){
+     console.log(arr[i]);
+     index = i;
+     break;
+}
+}
+for(let i = index+1; i < arr.length; i++){
+    sum = sum + arr[i];
+    count++;
+ 
+}
+let mijin = sum / count;
+console.log(index)
+console.log(mijin)
