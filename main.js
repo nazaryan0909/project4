@@ -90,20 +90,41 @@
 
 // զ) մինչև առաջին բացասական տարրը եղած այն տարրերի քանակը, որոնք պատկանում են [0,20] միջակայքին,
 
-let arr = [3, 60, 4, -2, 7, -1]
-let count = 0;
-let index = 0;
-for(let i = 0; i < arr.length; i++){
-    if(arr[i] < 0){
-        index = i;
-        console.log(arr[i]);
-        break;
-    }
-}
-for(let i = 0; i < index; i++){
-    if(arr[i] >= 0 && arr[i] <= 20){
-        count++
-    }
-}
-console.log(count)
+// let arr = [3, 60, 4, -2, 7, -1]
+// let count = 0;
+// let index = 0;
+// for(let i = 0; i < arr.length; i++){
+//     if(arr[i] < 0){
+//         index = i;
+//         console.log(arr[i]);
+//         break;
+//     }
+// }
+// for(let i = 0; i < index; i++){
+//     if(arr[i] >= 0 && arr[i] <= 20){
+//         count++
+//     }
+// }
+// console.log(count)
+
+// verjin erkusy tnayin ///////////////
+
+// է) [5,24] միջակայքում գտնվող առաջին տարրը և դրան հաջորդող տարրերի միջին թվաբանականը, 
+//  ը) առաջին 0-ին հաջորդող 1-ով սկսվող թվերի գումարը (եթե հաջորդականությունը 0 չի պարունակում՝ արտածել -1):
+
+
+// let arajin = 5;
+
+// let skizb = 5;
+// let verj = 24
+// let qanak = verj - skizb + 1;
+
+// let sum = 0;
+// for (let i = start; i <= end; i++) {
+//     sum += i;
+// }
+
+// let Mijin = sum / qanak;
+// console.log(Mijin);
+// console.log(arajin);
 
