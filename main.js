@@ -112,22 +112,51 @@
 // է) [5,24] միջակայքում գտնվող առաջին տարրը և դրան հաջորդող տարրերի միջին թվաբանականը, 
 //  ը) առաջին 0-ին հաջորդող 1-ով սկսվող թվերի գումարը (եթե հաջորդականությունը 0 չի պարունակում՝ արտածել -1):
 
-let arr = [3, 7, 5, 8, 1, 13, 23]
+// let arr = [3, 7, 5, 8, 1, 13, 23]
+// let index = 0;
+// let sum = 0;
+// let count = 0;
+// for(let i = 0; i < arr.length; i++){
+// if(arr[i] >= 5 && arr[i] <= 24){
+//      console.log(arr[i]);
+//      index = i;
+//      break;
+// }
+// }
+// for(let i = index+1; i < arr.length; i++){
+//     sum = sum + arr[i];
+//     count++;
+ 
+// }
+// let mijin = sum / count;
+// console.log(index)
+// console.log(mijin)
+
+//  ը) առաջին 0-ին հաջորդող 1-ով սկսվող թվերի գումարը (եթե հաջորդականությունը 0 չի պարունակում՝ արտածել -1):
+
+let arr = [3, 1, 0, 114, 11, 5, 9, 4]
 let index = 0;
 let sum = 0;
-let count = 0;
-for(let i = 0; i < arr.length; i++){
-if(arr[i] >= 5 && arr[i] <= 24){
-     console.log(arr[i]);
-     index = i;
-     break;
-}
-}
-for(let i = index+1; i < arr.length; i++){
-    sum = sum + arr[i];
-    count++;
- 
-}
-let mijin = sum / count;
-console.log(index)
-console.log(mijin)
+if(arr.includes(0) == false ){
+ console.log(-1);
+
+}else {
+    for(let i = 0; i < arr.length; i++){
+       if(arr[i] == 0){
+        index = i;
+        console.log(arr[i])
+        break;
+       }
+    }
+
+    for(let i = index+1; i < arr.length; i++){
+      
+        let str = arr[i] + "";
+        if(str[0] == "1"){
+            sum = sum + arr[i]
+        }
+    }
+
+    console.log(sum)
+}``
+
